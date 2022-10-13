@@ -106,6 +106,7 @@ function! VimuxOpenRunner() abort
     let g:VimuxRunnerIndex = s:tmuxIndex()
     call s:setRunnerName()
     call VimuxTmux('last-'.VimuxOption('VimuxRunnerType'))
+    sleep 100m
   endif
 endfunction
 
